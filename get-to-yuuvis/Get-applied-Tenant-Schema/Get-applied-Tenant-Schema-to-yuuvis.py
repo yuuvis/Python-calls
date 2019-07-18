@@ -1,19 +1,18 @@
-<!DOCTYPE html>
 import requests
 import json
 
 headerDict = {}
 paramDict = {}
-baseUrl = 'https' + '://' + 'yuuvis.azure-api.net'
+baseUrl = 'https' + '://' + 'api.yuuvis.io'
 
 header_name = 'Ocp-Apim-Subscription-Key'
-if header_name != 'Content-Type':
-    headerDict['Ocp-Apim-Subscription-Key'] = '{subscription key}'
+headerDict['Ocp-Apim-Subscription-Key'] = '{subscription key}'
+
 
 
 
 session = requests.Session()
 
 response = session.get(str(baseUrl+'/dms/schema/native'), headers=headerDict)
-print(response.content)
+print(response)
 

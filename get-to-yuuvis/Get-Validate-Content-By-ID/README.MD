@@ -1,22 +1,22 @@
-# yuuvis® Ultimate
+# Core Capabilities (CRUD)
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://yuuvis.io/how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
 
 ## Validate content digest by ID
 
-For already imported documents, using the Store one or more documents endpoint, a content digest is automatically generated and stored [(Secure Hash Algorythm, SHA256)](https://tools.ietf.org/html/rfc6234)
+For already imported documents, using the [Store one or more documents](https://yuuvis.io/docs/services/yuuvis-api/operations/ObjectsPost?) endpoint, a content digest is automatically generated and stored [(Secure Hash Algorythm, SHA256)](https://tools.ietf.org/html/rfc6234)
 
 To validate the content digest for a stored document, you use the **"Validate content digest by ID"** endpoint. Send a request with the objectId which generates a new content digest based on the currently stored document. This newly generated content digest is compared with the formerly generated and stored one.
 
+[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/ObjectsActionsValidateDigestByObjectIdGet/console)
 ## Request
 
 ## Request URL
 
-https://yuuvis.azure-api.net/dms/objects/{objectId}/actions/validate/digest
+https://api.yuuvis.io/dms/objects/{objectId}/actions/validate/digest
 
 ## Request parameters
 

@@ -1,22 +1,24 @@
-# yuuvis® Ultimate
+# Core Capabilities (CRUD)
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://api.yuuvis.io/how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
 
 ## Get the applied tenant schema
 
 The **"Get the applied tenant schema"** endpoint returns the applied schema of the tenant (JSON / XML) belonging to you as the logged on user. The applied schema is the tenant schema, enhanced by the global schema and the system properties.
 
-[Learn about yuuvis® API schemas](https://yuuvis.portal.azure-api.net/how-to/schema)
+[Learn about yuuvis® API schemas](https://yuuvis.io/how-to/schema)
+
+[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/get-dms-schema-native/console)
 
 ## Request
 
 ## Request URL
 
-https://yuuvis.azure-api.net/dms/schema/native
+https://api.yuuvis.io/dms/schema/native
+
 
 ## Request headers
 

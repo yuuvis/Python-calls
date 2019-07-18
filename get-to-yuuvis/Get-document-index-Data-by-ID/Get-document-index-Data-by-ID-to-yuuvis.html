@@ -1,35 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>JSSample</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-</head>
-<body>
+import requests
+import json
 
-<script type="text/javascript">
-    $(function() {
-        var params = {
-            // Request parameters
-        };      
+headerDict = {}
+paramDict = {}
+baseUrl = 'https' + '://' + 'api.yuuvis.io'
 
-        $.ajax({
-            url: "https://yuuvis.azure-api.net/dms/objects/{objectId}?" + $.param(params),
-            processData: false,
-            contentType: false,
-            cache: false,           
-            beforeSend: function(xhrObj){
-                // Request headers
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","{subscription key}");
-            },
-            type: "GET",
-        })
-        .done(function(data) {
-            alert("success");
-        })
-        .fail(function() {
-            alert("error");
-        });
-    });
-</script>
-</body>
-</html>
+header_name = 'Ocp-Apim-Subscription-Key'
+headerDict['Ocp-Apim-Subscription-Key'] = '{subscription key}'
+
+
+
+
+session = requests.Session()
+
+response = session.get(str(baseUrl+'/dms/objects/{objectId}'), headers=headerDict)
+print(response)
+

@@ -1,20 +1,21 @@
-# yuuvis® Ultimate
+# Core Capabilities (CRUD)
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://api.yuuvis.io/how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
 
 ## Get a text rendition
 
 The **"Get a text rendition"** endpoint generates and returns a text rendition of the content of the document (object) that matches the objectId parameter.
 
+[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/get-dms-objects-objectid-contents-renditions-text/console)
+
 ## Request
 
 ### Request URL
 
-https://yuuvis.azure-api.net/dms/objects/{objectId}/contents/renditions/text
+https://api.yuuvis.io/dms/objects/{objectId}/contents/renditions/text
 
 ## Request parameters
 

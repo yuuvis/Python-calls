@@ -1,16 +1,16 @@
-# yuuvis® Ultimate
+# Core Capabilities (CRUD)
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://yuuvis.io/how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
+
 
 ## Get a list of history entries by ID
 
 The **"Get a list of history entries by ID"** endpoint retrieves information about the actions and modifications that have been carried out for the given document (object) - objectId parameter. Each action or modification is stored in a separate history entry.
 
-[Read about Retrieving the History Entries of a Document with the yuuvis® API](https://yuuvis.portal.azure-api.net/how-to/retrieve_hist)
+[Read about Retrieving the History Entries of a Document with the yuuvis® API](https://yuuvis.io/how-to/retrieve_hist)
 
 
 ## Meaning of field values
@@ -30,12 +30,13 @@ The **"Get a list of history entries by ID"** endpoint retrieves information abo
 404	GET_THUMBNAIL_RENDITION	        Thumbnail preview has been downloaded
 
 ```
+[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/ObjectsHistoryByObjectIdGet/console)
 
 ## Request
 
 ### Request URL
 
-https://yuuvis.azure-api.net/dms/objects/{objectId}/history
+https://api.yuuvis.io/dms/objects/{objectId}/history
 
 ## Request parameters
 

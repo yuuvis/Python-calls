@@ -2,11 +2,11 @@ import requests
 
 headerDict = {}
 paramDict = {}
-baseUrl = 'https' + '://' + 'yuuvis.azure-api.net'
+baseUrl = 'https' + '://' + 'api.yuuvis.io'
 
 header_name = 'Ocp-Apim-Subscription-Key'
-if header_name != 'Content-Type':
-    headerDict['Ocp-Apim-Subscription-Key'] = '{subscription key}'
+headerDict['Ocp-Apim-Subscription-Key'] = '{subscription key}'
+
 
 
 

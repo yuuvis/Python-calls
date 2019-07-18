@@ -1,10 +1,9 @@
-# yuuvis® Ultimate
+# Core Capabilities (CRUD)
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://yuuvis.io/how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
 
 ## Get document content by ID
 
@@ -12,13 +11,15 @@ The **"Get document content by ID"** endpoint returns the original content file 
 
 
 
-[Read about Retrieving Documents with the yuuvis® API](https://yuuvis.portal.azure-api.net/how-to/retrieve)
+[Read about Retrieving Documents with the yuuvis® API](https://yuuvis.io/how-to/retrieve)
 
+
+[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/get-dms-objects-objectid-contents-file/console)
 ## Request
 
 ### Request URL
 
-https://yuuvis.azure-api.net/dms/objects/{objectId}/contents/file
+https://api.yuuvis.io/dms/objects/{objectId}/contents/file
 
 ## Request parameters
 

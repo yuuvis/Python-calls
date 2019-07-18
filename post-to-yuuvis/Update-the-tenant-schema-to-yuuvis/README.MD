@@ -1,29 +1,28 @@
-# yuuvis® Ultimate
+# Configuration and Settings
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://yuuvis.io/how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
 
 ## Update the tenant schema
 
 The **"Update the tenant schema"** endpoint validates your schema first, before it is updated. If the schema is not valid, no update takes place. Note that the "Try it" button is not available for this endpoint. You have to try it out externally. Use the provided code samples as a starting point.
 
-[Learn about yuuvis® API schemas](./https://yuuvis.portal.azure-api.net/how-to/schema)
+[Learn about yuuvis® API schemas](https://yuuvis.io/how-to/schema)
 
 ## Request
 
 ### Request URL
 
-https://yuuvis.azure-api.net/admin/schema
+https://api.yuuvis.io/admin/schema
 
 ## Request headers
 
 ```
 Content-Type (optional)             string          Media type of the body sent to the API.
 
--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 
 Ocp-Apim-Subscription-Key           string          Subscription key which provides access to this API. Found in your Profile.
 
@@ -126,6 +125,5 @@ Unprocessable Entity - Schema not valid
 
 
 ### Code samples
-
 
 [Update the tenant schema](./Update-tenant-schema-to-yuuivs.py)

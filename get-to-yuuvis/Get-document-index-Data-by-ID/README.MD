@@ -1,20 +1,22 @@
-# yuuvis® Ultimate
+# Core Capabilities (CRUD)
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://api.yuuvis.io/how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
 
 ## Get document index data by ID
 
 The **"Get document index data by ID"** endpoint returns the index data related to the document (object) that matches the objectId parameter.
 
+[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/ObjectsByObjectIdGet/console)
+
 ## Request
 
 ## Request URL
 
-https://yuuvis.azure-api.net/dms/objects/{objectId}
+https://api.yuuvis.io/dms/objects/{objectId}
+
 
 ## Request parameters
 

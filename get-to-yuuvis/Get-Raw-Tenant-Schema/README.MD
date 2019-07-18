@@ -1,22 +1,23 @@
-# yuuvis® Ultimate
+# Configuration and Settings
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://yuuvis.io/how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
 
 ## Get the raw tenant schema
 
 The **"Get the raw tenant schema"** endpoint returns the raw schema of the tenant (XML) belonging to you as the logged on user.
 
-[Learn about yuuvis® API schemas](https://yuuvis.portal.azure-api.net/how-to/schema)
+[Learn about yuuvis® API schemas](https://yuuvis.io/how-to/schema)
+
+[Try It](https://yuuvis.io/docs/services/yuuvis-admin/operations/get-admin-schema/console)
 
 ## Request
 
 ## Request URL
 
-https://yuuvis.azure-api.net/admin/schema
+https://api.yuuvis.io/admin/schema
 
 ## Request headers
 
@@ -187,4 +188,5 @@ Schema
 ### Forbidden
 
 ### Code samples
+
 [Get Raw Tenant Schema](./get-Raw-Tenant-Schema-to-yuuvis.py)

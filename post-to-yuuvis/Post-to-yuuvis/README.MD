@@ -1,10 +1,9 @@
-# yuuvis® Ultimate
+# Core Capabilities (CRUD)
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://yuuvis.io/how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
 
 ## Store one or more documents
 
@@ -33,14 +32,15 @@ Index Data Example, JSON Format
  ` ` ` ` `}]`
  `}
  ```
-[Read about Storing Documents with the yuuvis® API](https://yuuvis.portal.azure-api.net/how-to/import?fbclid=IwAR0fxBX006rnFUmf2Ghs7mAEwsAmxv-KiouyHXGmED8BvXBktWL6JzlHGE4)
+[Read about Storing Documents with the yuuvis® API](https://yuuvis.io/how-to/import)
 
 ## Request
 
 ### Request URL
 
-https://yuuvis.azure-api.net/dms/objects[?data][&cid_63apple]
- 
+https://api.yuuvis.io/dms/objects
+
+
 ## Request parameters
 
 ```

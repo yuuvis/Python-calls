@@ -1,10 +1,9 @@
-# yuuvis® Ultimate
+# Core Capabilities (CRUD)
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://yuuvis.io//how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
 
 ## Delete document by ID
 
@@ -12,13 +11,14 @@ Already imported documents using the "Store one or more documents" endpoint can 
 The **"Delete document by ID"** endpoint offers the functionality to delete the document (object) that matches the given objectId parameter.
 
 
-[Read about Deleting Documents with the yuuvis® API](https://yuuvis.portal.azure-api.net/how-to/delete)
+[Read about Deleting Documents with the yuuvis® API](https://yuuvis.io/how-to/delete)
 
+[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/ObjectsByObjectIdDelete/console)
 ## Request
 
 ### Request URL
 
-https://yuuvis.azure-api.net/dms/objects/{objectId}
+https://api.yuuvis.io/dms/objects/{objectId}
 
 ## Request parameters
 

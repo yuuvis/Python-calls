@@ -1,10 +1,9 @@
-# yuuvis® Ultimate
+# Core Capabilities (CRUD)
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://yuuvis.io/how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
 
 ## Search documents by search query
 
@@ -12,13 +11,13 @@ The **"Search documents by search query"** endpoint requires a JSON body contain
 
 The search parameters skipCount and maxItems allow paging for search queries, whereby maxItems defines the maximum number of entries in the hit list and skipCount the maximum number of entries to be skipped.
 
-[Learn about the yuuvis® CMIS-Based Query Language](https://yuuvis.portal.azure-api.net/how-to/CMIS)
+[Learn about the yuuvis® CMIS-Based Query Language](https://yuuvis.io/how-to/CMIS)
 
 ## Request
 
 ### Request URL
 
-https://yuuvis.azure-api.net/dms/objects/search
+https://api.yuuvis.io/dms/objects/search
 
 ## Request headers
 

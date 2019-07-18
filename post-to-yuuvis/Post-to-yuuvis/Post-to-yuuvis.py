@@ -3,14 +3,14 @@ import json
 
 headerDict = {}
 paramDict = {}
-baseUrl = 'https' + '://' + 'yuuvis.azure-api.net'
+baseUrl = 'https' + '://' + 'api.yuuvis.io'
 
 header_name = 'Content-Type'
-if header_name != 'Content-Type':
-    headerDict['Content-Type'] = 'multipart/form-data, application/x-www-form-urlencoded'
+headerDict['Content-Type'] = 'multipart/form-data, application/x-www-form-urlencoded'
+
 header_name = 'Ocp-Apim-Subscription-Key'
-if header_name != 'Content-Type':
-    headerDict['Ocp-Apim-Subscription-Key'] = '{subscription key}'
+headerDict['Ocp-Apim-Subscription-Key'] = '{subscription key}'
+
 
 
 
@@ -28,5 +28,6 @@ multipart_form_data = {
 }
 
 response = session.post(str(baseUrl+'/dms/objects'), files=multipart_form_data, headers=headerDict)
-print(response.content)
+print(response.json())
+
 

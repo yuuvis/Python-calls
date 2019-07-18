@@ -1,22 +1,21 @@
-# yuuvis® Ultimate
+# Configuration and Settings
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://yuuvis.io/how-to)
 
-**yuuvis® Ultimate** is the ultimate freedom to innovate. Get access to the latest API endpoints as the yuuvis® development team releases them on its journey to aPaas.
 
 ## Validate a schema
 
 The **"Validate a schema"** endpoint validates a schema and returns a list of validation error messages, if any. Note that the "Try it" button is not available for this endpoint. You have to try it out externally. Use the provided code samples as a starting point.
 
-[Learn about yuuvis® API schemas](https://yuuvis.portal.azure-api.net/how-to/schema)
+[Learn about yuuvis® API schemas](https://yuuvis.io/how-to/schema)
 
 ## Request
 
 ### Request URL
 
-https://yuuvis.azure-api.net/admin/schema/validate
+https://api.yuuvis.io/admin/schema/validate
 
 ## Request headers
 
