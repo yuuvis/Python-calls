@@ -2,7 +2,7 @@
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://yuuvis.io/how-to)
 
 
 ## Update document index data by ID
