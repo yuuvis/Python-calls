@@ -2,53 +2,98 @@
 
 ### API change history
 
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
+[Documentation](https://yuuvis.io/how-to)
 
 
-## Update document content by ID
+## Search documents by search query
 
-The **"Update document content by ID"** endpoint updates the content file of the document (object) that matches the objectId parameter.
+The **"Search documents by search query"** endpoint requires a JSON body containing your search query.
 
-You can name the content by passing the file name over to the Content-Disposition header. Note that the "Try it" button is not available for this endpoint. You have to try it out externally. Use the provided code samples as a starting point.
+The search parameters skipCount and maxItems allow paging for search queries, whereby maxItems defines the maximum number of entries in the hit list and skipCount the maximum number of entries to be skipped.
 
-[Read about Updating Documents with the yuuvis® API](https://yuuvis.io/how-to/update)
+[Learn about the yuuvis® CMIS-Based Query Language](https://yuuvis.io/how-to/CMIS)
 
 ## Request
 
 ### Request URL
 
-hhttps://api.yuuvis.io/dms/objects/{objectId}/contents/file
-
-
-## Request parameters
-
-```
-objectId        string      The *objectId* of the document (object) to be updated.
-
-```
+https://api.yuuvis.io/dms/objects/search
 
 ## Request headers
 
 ```
-Content-Disposition (optional)      string      format: attachment;filename=myfilename
-
---------------------------------------------------------------------------------------------------------------------------------
-
-Content-Type (optional)             string      Media type of the body sent to the API.
-
---------------------------------------------------------------------------------------------------------------------------------
-
-Ocp-Apim-Subscription-Key           string      Subscription key which provides access to this API. Found in your Profile.
+Content-Type (optional)         string      Media type of the body sent to the API.
+----------------------------------------------------------------------------------------------------------------------
+Ocp-Apim-Subscription-Key       string      Subscription key which provides access to this API. Found in your Profile.
 
 ```
-
 ## Request body
 
-`application/octet-stream`
+A *search query* consists of three parameters:
 
-## Responses        
+- **statement** - the SELECT statement (CMIS-Based Query Language)
+- **skipCount** - defines the maximum number of entries to be skipped (for paging)
+-  **maxItems** - defines the maximum number of entries in the hit list
 
-## 200 OK        
+
+`application/json`
+
+### Sample
+
+```
+{
+  "query": {
+    "statement": "SELECT * FROM enaio:object",
+    "skipCount": 0,
+    "maxItems": 50
+  }
+}
+```
+
+### Schema
+```
+ {
+  "title": "Search Request",
+  "required": [
+    "query"
+  ],
+  "type": "object",
+  "properties": {
+    "query": {
+      "required": [
+        "maxItems",
+        "skipCount",
+        "statement"
+      ],
+      "type": "object",
+      "properties": {
+        "statement": {
+          "type": "string"
+        },
+        "skipCount": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxItems": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    }
+  },
+  "example": {
+    "query": {
+      "statement": "SELECT * FROM enaio:object",
+      "skipCount": 0,
+      "maxItems": 50
+    }
+  }
+}
+```
+
+## Responses
+
+## 200 OK
 
 ### OK
 
@@ -58,7 +103,6 @@ Ocp-Apim-Subscription-Key           string      Subscription key which provides 
 
 ### Sample
 ```
-
  {
   "objects": [
     {
@@ -85,7 +129,7 @@ Ocp-Apim-Subscription-Key           string      Subscription key which provides 
           "value": "2019-03-20T13:34:20.15Z"
         },
         "enaio:versionNumber": {
-          "value": 2
+          "value": 1
         },
         "enaio:tenant": {
           "value": "heckathon"
@@ -94,7 +138,7 @@ Ocp-Apim-Subscription-Key           string      Subscription key which provides 
           "value": "49749ababad604f3"
         },
         "Name": {
-          "value": "Update Email"
+          "value": "my document"
         }
       },
       "contentStreams": [
@@ -109,16 +153,22 @@ Ocp-Apim-Subscription-Key           string      Subscription key which provides 
         }
       ]
     }
-  ]
+  ],
+  "numItems": 1,
+  "hasMoreItems": false,
+  "totalNumItems": 1
 }
 ```
-### Scheam
+### Schema
 
 ```
 {
-  "title": "Update Metadata Response",
+  "title": "Search Response Object",
   "required": [
-    "objects"
+    "hasMoreItems",
+    "numItems",
+    "objects",
+    "totalNumItems"
   ],
   "type": "object",
   "properties": {
@@ -164,45 +214,16 @@ Ocp-Apim-Subscription-Key           string      Subscription key which provides 
         }
       }
     },
-    "contentStreams": {
-      "type": "array",
-      "items": {
-        "title": "Content Stream Object",
-        "required": [
-          "archivePath",
-          "contentStreamId",
-          "digest",
-          "fileName",
-          "length",
-          "mimeType",
-          "repositoryId"
-        ],
-        "type": "object",
-        "properties": {
-          "contentStreamId": {
-            "type": "string"
-          },
-          "archivePath": {
-            "type": "string"
-          },
-          "length": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "mimeType": {
-            "type": "string"
-          },
-          "fileName": {
-            "type": "string"
-          },
-          "digest": {
-            "type": "string"
-          },
-          "repositoryId": {
-            "type": "string"
-          }
-        }
-      }
+    "numItems": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "hasMoreItems": {
+      "type": "boolean"
+    },
+    "totalNumItems": {
+      "type": "integer",
+      "format": "int64"
     }
   },
   "example": {
@@ -231,7 +252,7 @@ Ocp-Apim-Subscription-Key           string      Subscription key which provides 
             "value": "2019-03-20T13:34:20.15Z"
           },
           "enaio:versionNumber": {
-            "value": 2
+            "value": 1
           },
           "enaio:tenant": {
             "value": "heckathon"
@@ -240,7 +261,7 @@ Ocp-Apim-Subscription-Key           string      Subscription key which provides 
             "value": "49749ababad604f3"
           },
           "Name": {
-            "value": "Update Email"
+            "value": "my document"
           }
         },
         "contentStreams": [
@@ -255,17 +276,14 @@ Ocp-Apim-Subscription-Key           string      Subscription key which provides 
           }
         ]
       }
-    ]
+    ],
+    "numItems": 1,
+    "hasMoreItems": false,
+    "totalNumItems": 1
   }
 }
 ```
 
-## 404 Not Found
+### Code example
 
-### NOT FOUND
-
-
-
-### Code examples
- 
-[Update document content by ID](./Update-to-yuuvis.py)
+[Search documents by search query](./Post-Search-Query.py)

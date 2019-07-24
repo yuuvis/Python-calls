@@ -2,16 +2,14 @@
 
 ### API change history
 
-[Documentation](https://yuuvis.io/how-to)
+[Documentation](https://yuuvis.portal.azure-api.net/how-to)
 
 
-## Update document index data by ID
+## Update document content by ID
 
-The **"Update document index data by ID"** endpoint updates the index data of the document (object) that matches the objectId parameter. 
+The **"Update document content by ID"** endpoint updates the content file of the document (object) that matches the objectId parameter.
 
-To update the index data send the request with the new index data as request body and the ID of the document (object) as objectId. If one of the properties is missing in the new index data, it will be removed from the document (object).
-Most of the system properties cannot be updated or are updated automatically. If the new index data contains these properties, their values must match the values of the current version. Hence you can retrieve the current index data using the [GET document index data by ID](https://yuuvis.io/docs/services/yuuvis-api/operations/ObjectsByObjectIdGet?) endpoint first, to use the result. Edit some properties and post it again using this endpoint.
-Note that the "Try it" button is not available for this endpoint. You have to try it out externally. Use the provided code samples as a starting point.
+You can name the content by passing the file name over to the Content-Disposition header. Note that the "Try it" button is not available for this endpoint. You have to try it out externally. Use the provided code samples as a starting point.
 
 [Read about Updating Documents with the yuuvis® API](https://yuuvis.io/how-to/update)
 
@@ -19,134 +17,48 @@ Note that the "Try it" button is not available for this endpoint. You have to tr
 
 ### Request URL
 
-https://api.yuuvis.io/dms/objects/{objectId}
+hhttps://api.yuuvis.io/dms/objects/{objectId}/contents/file
 
 
 ## Request parameters
 
 ```
-objectId        string          The objectId of the document (object) to be updated.
+objectId        string      The *objectId* of the document (object) to be updated.
 
 ```
 
 ## Request headers
 
 ```
-Content-Type (optional)             string          Media type of the body sent to the API.
+Content-Disposition (optional)      string      format: attachment;filename=myfilename
 
------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
 
-Ocp-Apim-Subscription-Key           string          Subscription key which provides access to this API. Found in your Profile.
+Content-Type (optional)             string      Media type of the body sent to the API.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Ocp-Apim-Subscription-Key           string      Subscription key which provides access to this API. Found in your Profile.
 
 ```
-
 
 ## Request body
 
-The updated index data is passed as JSON structure in the body as follows
+`application/octet-stream`
 
-`application/json`
+## Responses        
 
-### Sample
-```
-{
-  "objects": [
-    {
-      "properties": {
-        "enaio:objectTypeId": {
-          "value": "document"
-        },
-        "Name": {
-          "value": "Update Email"
-        }
-      }
-    }
-  ]
-}
+## 200 OK        
 
-```
-### Schema
-```
-{
-  "title": "Update Metadata Request",
-  "required": [
-    "objects"
-  ],
-  "type": "object",
-  "properties": {
-    "objects": {
-      "type": "array",
-      "items": {
-        "title": "Metadata Object",
-        "required": [
-          "properties"
-        ],
-        "type": "object",
-        "properties": {
-          "properties": {
-            "required": [
-              "enaio:objectTypeId"
-            ],
-            "type": "object",
-            "properties": {
-              "enaio:objectTypeId": {
-                "required": [
-                  "value"
-                ],
-                "type": "object",
-                "properties": {
-                  "value": {
-                    "type": "string"
-                  }
-                }
-              },
-              "Name": {
-                "required": [
-                  "value"
-                ],
-                "type": "object",
-                "properties": {
-                  "value": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "example": {
-    "objects": [
-      {
-        "properties": {
-          "enaio:objectTypeId": {
-            "value": "document"
-          },
-          "Name": {
-            "value": "Update Email"
-          }
-        }
-      }
-    ]
-  }
-}
-```
-
-## Responses
-
-## 200 OK      
-
-### OK           
+### OK
 
 ## Representations
 
 `application/json`
 
 ### Sample
-
 ```
+
  {
   "objects": [
     {
@@ -200,7 +112,7 @@ The updated index data is passed as JSON structure in the body as follows
   ]
 }
 ```
-### Schema
+### Scheam
 
 ```
 {
@@ -348,10 +260,12 @@ The updated index data is passed as JSON structure in the body as follows
 }
 ```
 
-##  404 Not Found
+## 404 Not Found
 
-### Not Found
+### NOT FOUND
 
-### Code samples
 
-[Update document index data by ID](./Update-index-data-to-yuuivs.py)
+
+### Code examples
+ 
+[Update document content by ID](./Post-Object-Update-Content.py)

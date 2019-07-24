@@ -5,9 +5,9 @@
 [Documentation](https://yuuvis.io/how-to)
 
 
-## Validate a schema
+## Update the tenant schema
 
-The **"Validate a schema"** endpoint validates a schema and returns a list of validation error messages, if any. Note that the "Try it" button is not available for this endpoint. You have to try it out externally. Use the provided code samples as a starting point.
+The **"Update the tenant schema"** endpoint validates your schema first, before it is updated. If the schema is not valid, no update takes place. Note that the "Try it" button is not available for this endpoint. You have to try it out externally. Use the provided code samples as a starting point.
 
 [Learn about yuuvis® API schemas](https://yuuvis.io/how-to/schema)
 
@@ -15,14 +15,14 @@ The **"Validate a schema"** endpoint validates a schema and returns a list of va
 
 ### Request URL
 
-https://api.yuuvis.io/admin/schema/validate
+https://api.yuuvis.io/admin/schema
 
 ## Request headers
 
 ```
 Content-Type (optional)             string          Media type of the body sent to the API.
 
---------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 
 Ocp-Apim-Subscription-Key           string          Subscription key which provides access to this API. Found in your Profile.
 
@@ -34,22 +34,24 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ## Responses
 
-### 200 OK                          
+## 200 OK
 
-### OK - The schema is valid.      
+### OK - Schema is valid
 
 ## Representations
 
 `application/json`
 
-## Sample
+
+### Sample
 ```
  {
   "validationErrors": []
 }
-
+422 Unprocessable Entity
+Unprocessable Entity - Schema not valid
 ```
-## Schema
+### Scheam
 ```
 {
   "title": "Validation Error List",
@@ -72,11 +74,8 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
   }
 }
 ```
-## 422 Unprocessable Entity
 
-### Unprocessable Entity - The schema is invalid.
-
-### Representations
+## Representations
 
 `application/json`
 
@@ -93,10 +92,8 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
   ]
 }
 ```
-
-## Schema
+### Schema
 ```
-
 {
   "title": "Validation Error List",
   "type": "object",
@@ -125,6 +122,8 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
   }
 }
 ```
-## Code samples
 
-[Validate a schema](./Validate-schema-to-yuuvis.py)
+
+### Code samples
+
+[Update the tenant schema](./Post-Schema-Update.py)
