@@ -74,4 +74,4 @@ Schema
 
 ### Code samples
 
-[Get applied Tenant Schema](./Get-applied-Tenant-Schema-to-yuuvis.py)
+[Get applied Tenant Schema](./Get-Tenant-Schema-Applied.py)

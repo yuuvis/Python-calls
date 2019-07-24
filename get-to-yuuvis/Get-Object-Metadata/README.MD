@@ -255,4 +255,4 @@ Ocp-Apim-Subscription-Key           string           Subscription key which prov
 
 ### Code samples
 
-[Get document index data by ID](./Get-document-index-Data-by-ID-to-yuuvis.html)
+[Get document index data by ID](./Get-Object-Metadata.py)

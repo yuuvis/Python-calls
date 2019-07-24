@@ -49,4 +49,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### Code example
 
-[Get a PDF Rendition](./Get-a-PDF-Rendition-to-yuuvis.py)
+[Get a PDF Rendition](./Get-Rendition-PDF.py)

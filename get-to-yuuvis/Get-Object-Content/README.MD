@@ -48,4 +48,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### Code samples
 
-[Get document content by ID](./Get-a-document-by-Content-ID-to-yuuvis.py)
+[Get document content by ID](./Get-Object-Content.py)

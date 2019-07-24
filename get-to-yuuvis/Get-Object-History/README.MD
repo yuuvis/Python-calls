@@ -466,4 +466,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### Code samples
 
-[Get-list-of-History-to-yuuvis.html](./Get-list-of-History-to-yuuvis.py)
+[Get-Object-History.py](./Get-Object-History.py)
