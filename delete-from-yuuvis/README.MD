@@ -51,4 +51,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### Code samples
 
-[Delete document by ID](./Delete-to-yuuvis.py)
+[Delete document by ID](./Delete-from-yuuvis.py)

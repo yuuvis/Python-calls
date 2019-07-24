@@ -189,4 +189,4 @@ Schema
 
 ### Code samples
 
-[Get Raw Tenant Schema](./get-Raw-Tenant-Schema-to-yuuvis.py)
+[Get Raw Tenant Schema](./Get-Tenant-Schema-Raw.py)
