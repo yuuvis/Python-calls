@@ -1,2 +1,2 @@
 # Python-calls
-This houses that yuuvis® API calls related to Python
+This houses the yuuvis® API calls written using Python.
