@@ -1,27 +1,15 @@
 # Core Capabilities (CRUD)
 
-### API change history
-
-[Documentation](https://yuuvis.io/how-to)
-
-
 ## Get a PDF rendition
 
 The **"Get a PDF rendition"** endpoint generates and returns a PDF rendition of the content of the document (object) that matches the objectId parameter. Note that the PDF file cannot be displayed using the Azure portal. Please use another tool, such as Postman, to download the PDF rendition file.
 
-[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/get-dms-objects-objectid-contents-renditions-pdf/console)
-## Request
 
-### Request URL
+[Read about Retrieving Document Renditions with the yuuvis® API](https://yuuvis.io/how-to/rendition)
+
+## Request URL
 
 https://api.yuuvis.io/dms/objects/{objectId}/contents/renditions/pdf
-
-## Request parameters
-
-```
-objectId            string          The objectId of the document (object) to be requested.
-
-```
 
 ## Request headers
 
@@ -49,4 +37,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### Code example
 
-[Get a PDF Rendition PDF](./Get-Rendition-PDF.py)
+[Get a PDF Rendition](./Get-Rendition-PDF.html)

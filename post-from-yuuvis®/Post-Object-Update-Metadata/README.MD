@@ -1,13 +1,8 @@
 # Core Capabilities (CRUD)
 
-### API change history
-
-[Documentation](https://yuuvis.io/how-to)
-
-
 ## Update document index data by ID
 
-The **"Update document index data by ID"** endpoint updates the index data of the document (object) that matches the objectId parameter. 
+The **"Update document index data by ID"** endpoint updates the index data of the document (object) that matches the objectId parameter.
 
 To update the index data send the request with the new index data as request body and the ID of the document (object) as objectId. If one of the properties is missing in the new index data, it will be removed from the document (object).
 Most of the system properties cannot be updated or are updated automatically. If the new index data contains these properties, their values must match the values of the current version. Hence you can retrieve the current index data using the [GET document index data by ID](https://yuuvis.io/docs/services/yuuvis-api/operations/ObjectsByObjectIdGet?) endpoint first, to use the result. Edit some properties and post it again using this endpoint.
@@ -15,19 +10,9 @@ Note that the "Try it" button is not available for this endpoint. You have to tr
 
 [Read about Updating Documents with the yuuvis® API](https://yuuvis.io/how-to/update)
 
-## Request
-
-### Request URL
+## Request URL
 
 https://api.yuuvis.io/dms/objects/{objectId}
-
-
-## Request parameters
-
-```
-objectId        string          The objectId of the document (object) to be updated.
-
-```
 
 ## Request headers
 
@@ -354,4 +339,4 @@ The updated index data is passed as JSON structure in the body as follows
 
 ### Code samples
 
-[Update document index data by ID](./Post-Object-Update-Metadata.py)
+[Update document index data by ID](./Post-Object-Update-Metadata.html)

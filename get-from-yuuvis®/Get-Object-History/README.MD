@@ -1,10 +1,5 @@
 # Core Capabilities (CRUD)
 
-### API change history
-
-[Documentation](https://yuuvis.io/how-to)
-
-
 
 ## Get a list of history entries by ID
 
@@ -30,21 +25,10 @@ The **"Get a list of history entries by ID"** endpoint retrieves information abo
 404	GET_THUMBNAIL_RENDITION	        Thumbnail preview has been downloaded
 
 ```
-[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/ObjectsHistoryByObjectIdGet/console)
 
-## Request
-
-### Request URL
+## Request URL
 
 https://api.yuuvis.io/dms/objects/{objectId}/history
-
-## Request parameters
-
-```
-
-objectId            string          The objectID of the document (object) for which the history entries are to be retrieved.
-
-```
 
 ## Request headers
 
@@ -466,4 +450,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### Code samples
 
-[Get-Object-History.py](./Get-Object-History.py)
+[Get-Object-History](./Get-Object-History.html)

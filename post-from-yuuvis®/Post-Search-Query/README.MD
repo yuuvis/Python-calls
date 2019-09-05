@@ -1,21 +1,15 @@
 # Core Capabilities (CRUD)
 
-### API change history
-
-[Documentation](https://yuuvis.io/how-to)
-
-
 ## Search documents by search query
 
 The **"Search documents by search query"** endpoint requires a JSON body containing your search query.
 
 The search parameters skipCount and maxItems allow paging for search queries, whereby maxItems defines the maximum number of entries in the hit list and skipCount the maximum number of entries to be skipped.
 
+
 [Learn about the yuuvis® CMIS-Based Query Language](https://yuuvis.io/how-to/CMIS)
 
-## Request
-
-### Request URL
+## Request URL
 
 https://api.yuuvis.io/dms/objects/search
 
@@ -286,4 +280,4 @@ A *search query* consists of three parameters:
 
 ### Code example
 
-[Search documents by search query](./Post-Search-Query.py)
+[Search documents by search query](./Post-Search-Query.html)

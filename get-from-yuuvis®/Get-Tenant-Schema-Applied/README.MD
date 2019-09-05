@@ -1,29 +1,21 @@
-# Core Capabilities (CRUD)
+# Configuration and Settings
 
-### API change history
+## Get the raw tenant schema
 
-[Documentation](https://yuuvis.io/how-to)
+The **"Get the raw tenant schema"** endpoint returns the raw schema of the tenant (XML) belonging to you as the logged on user.
 
-
-## Get the applied tenant schema
-
-The **"Get the applied tenant schema"** endpoint returns the applied schema of the tenant (JSON / XML) belonging to you as the logged on user. The applied schema is the tenant schema, enhanced by the global schema and the system properties.
 
 [Learn about yuuvis® API schemas](https://yuuvis.io/how-to/schema)
 
-[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/get-dms-schema-native/console)
-
-## Request
-
 ## Request URL
 
-https://api.yuuvis.io/dms/schema/native
-
+https://api.yuuvis.io/admin/schema
 
 ## Request headers
 
 ```
 Ocp-Apim-Subscription-Key           string          Subscription key which provides access to this API. Found in your Profile.
+
 ```
 
 ## Request body
@@ -34,38 +26,153 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### OK
 
-
 ## Representations
-
-`application/json`
-
-```
-Sample
-
-{}
-
-Schema
-
-{
-  "type": "object"
-}
-```
 
 `application/xml`
 
+### Sample
+
+```
+ <schema>{
+  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+  "xsi:schemaLocation": "http://optimal-systems.org/ns/dmscloud/schema/v4.0/ dmsCloud-schema.xsd",
+  "propertyStringDefinition": {
+    "id": "myname",
+    "propertyType": "string",
+    "cardinality": "single",
+    "required": true
+  },
+  "propertyDateTimeDefinition": {
+    "id": "mydate",
+    "propertyType": "datetime",
+    "cardinality": "single",
+    "required": true
+  },
+  "typeDocumentDefinition": {
+    "id": "mydocument",
+    "baseId": "enaio:document",
+    "propertyReference": [
+      "myname",
+      "mydate"
+    ],
+    "contentStreamAllowed": "required"
+  }
+}</schema>
+
+```
+### Schema
+
 ```
 Sample
-
-{
-  "type": "object"
-}
-
 Schema
-
  {
-  "type": "object"
+  "title": "Tenant Schema Example",
+  "required": [
+    "propertyStringDefinition",
+    "typeDocumentDefinition"
+  ],
+  "type": "object",
+  "properties": {
+    "xmlns:xsi": {
+      "type": "string",
+      "xml": {
+        "attribute": true
+      }
+    },
+    "xsi:schemaLocation": {
+      "type": "string",
+      "xml": {
+        "attribute": true
+      }
+    },
+    "propertyStringDefinition": {
+      "title": "Property Definition Object",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyType": {
+          "type": "string"
+        },
+        "cardinality": {
+          "type": "string"
+        },
+        "required": {
+          "type": "boolean"
+        }
+      }
+    },
+    "propertyDateTimeDefinition": {
+      "title": "Property Definition Object",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "propertyType": {
+          "type": "string"
+        },
+        "cardinality": {
+          "type": "string"
+        },
+        "required": {
+          "type": "boolean"
+        }
+      }
+    },
+    "typeDocumentDefinition": {
+      "title": "Type Document Definition Object",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "baseId": {
+          "type": "string"
+        },
+        "propertyReference": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contentStreamAllowed": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "xml": {
+    "name": "schema",
+    "namespace": "http://optimal-systems.org/ns/dmscloud/schema/v4.0/"
+  },
+  "example": {
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "xsi:schemaLocation": "http://optimal-systems.org/ns/dmscloud/schema/v4.0/ dmsCloud-schema.xsd",
+    "propertyStringDefinition": {
+      "id": "myname",
+      "propertyType": "string",
+      "cardinality": "single",
+      "required": true
+    },
+    "propertyDateTimeDefinition": {
+      "id": "mydate",
+      "propertyType": "datetime",
+      "cardinality": "single",
+      "required": true
+    },
+    "typeDocumentDefinition": {
+      "id": "mydocument",
+      "baseId": "enaio:document",
+      "propertyReference": [
+        "myname",
+        "mydate"
+      ],
+      "contentStreamAllowed": "required"
+    }
+  }
 }
-
 ```
 
 ## 403 Forbidden
@@ -74,4 +181,4 @@ Schema
 
 ### Code samples
 
-[Get applied Tenant Schema](./Get-Tenant-Schema-Applied.py)
+[Get Raw Tenant Schema](./Get-Tenant-Schema-Raw.html)

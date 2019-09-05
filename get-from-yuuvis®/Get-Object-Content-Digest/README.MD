@@ -1,29 +1,15 @@
 # Core Capabilities (CRUD)
 
-### API change history
-
-[Documentation](https://yuuvis.io/how-to)
-
-
 ## Validate content digest by ID
 
 For already imported documents, using the [Store one or more documents](https://yuuvis.io/docs/services/yuuvis-api/operations/ObjectsPost?) endpoint, a content digest is automatically generated and stored [(Secure Hash Algorythm, SHA256)](https://tools.ietf.org/html/rfc6234)
 
 To validate the content digest for a stored document, you use the **"Validate content digest by ID"** endpoint. Send a request with the objectId which generates a new content digest based on the currently stored document. This newly generated content digest is compared with the formerly generated and stored one.
 
-[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/ObjectsActionsValidateDigestByObjectIdGet/console)
-## Request
 
 ## Request URL
 
 https://api.yuuvis.io/dms/objects/{objectId}/actions/validate/digest
-
-## Request parameters
-
-```
-objectId            string          The objectId of the document (object) for which the content digest is to be validated.
-
-```
 
 ## Request headers
 
@@ -50,4 +36,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### Code example
 
-[Get Validate Content by ID](./Get-Object-Content-Digest.py)
+[Get Validate Content by ID](./Get-Object-Content-Digest.html)

@@ -1,27 +1,15 @@
 # Core Capabilities (CRUD)
 
-### API change history
-
-[Documentation](https://yuuvis.io/how-to)
-
-
 ## Get a text rendition
 
 The **"Get a text rendition"** endpoint generates and returns a text rendition of the content of the document (object) that matches the objectId parameter.
 
-[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/get-dms-objects-objectid-contents-renditions-text/console)
 
-## Request
+[Read about Retrieving Document Renditions with the yuuvis® API](https://yuuvis.io/how-to/rendition)
 
 ### Request URL
 
 https://api.yuuvis.io/dms/objects/{objectId}/contents/renditions/text
-
-## Request parameters
-
-```
-objectId            string              The objectId of the document (object) to be requested.
-```
 
 ## Request headers
 
@@ -48,4 +36,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### Code samples
 
-[Get a Rendition Text](./Get-Rendition-Text.py)
+[Get a text rendition](./Get-Rendition-Text.html)

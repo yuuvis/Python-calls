@@ -1,36 +1,21 @@
 # Core Capabilities (CRUD)
 
-### API change history
-
-[Documentation](https://yuuvis.portal.azure-api.net/how-to)
-
-
 ## Update document content by ID
 
-The **"Update document content by ID"** endpoint updates the content file of the document (object) that matches the objectId parameter.
+The **"Update document content by ID"** endpoint updates the content file of the document (object) that matches the objectId parameter. You can name the content by passing the file name over to the Content-Disposition header.
 
-You can name the content by passing the file name over to the Content-Disposition header. Note that the "Try it" button is not available for this endpoint. You have to try it out externally. Use the provided code samples as a starting point.
 
 [Read about Updating Documents with the yuuvis® API](https://yuuvis.io/how-to/update)
 
-## Request
-
 ### Request URL
 
-hhttps://api.yuuvis.io/dms/objects/{objectId}/contents/file
+https://api.yuuvis.io/dms/objects/{objectId}/contents/file
 
-
-## Request parameters
-
-```
-objectId        string      The *objectId* of the document (object) to be updated.
-
-```
 
 ## Request headers
 
 ```
-Content-Disposition (optional)      string      format: attachment;filename=myfilename
+Content-Disposition                 string      format: attachment;filename=myfilename
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -267,5 +252,5 @@ Ocp-Apim-Subscription-Key           string      Subscription key which provides 
 
 
 ### Code examples
- 
-[Update document content by ID](./Post-Object-Update-Content.py)
+
+[Update document content by ID](./Post-Object-Update-Content.html)

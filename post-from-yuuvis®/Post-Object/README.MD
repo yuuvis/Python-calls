@@ -1,82 +1,65 @@
 # Core Capabilities (CRUD)
 
-### API change history
-
-[Documentation](https://yuuvis.io/how-to)
-
-
 ## Store one or more documents
 
 The **"Store one or more documents"** endpoint requires a multipart body with an index data parameter as well as a binary content parameter.
 
-Save your index data as file (e.g. metadata.json) and use it for the data parameter. For the binary content, the cid_63apple parameter, you can use any file you'd like to store. Note that the "Try it" button is not available for this endpoint. You have to try it out externally. Use the provided code samples as a starting point.
+Save your metadata as file (e.g. metadata.json) and use it for the data parameter. For the binary content, the cid_63apple parameter, you can use any file you'd like to store.
 
 If the request is successful, the index data of the previously stored document will be returned in JSON format.
 
-Index Data Example, JSON Format
-
-```
-{`
- ` ` ` ` `"objects": [{`
- ` ` ` ` ` ` ` ` `"properties": {`
- ` ` ` ` ` ` ` ` ` ` ` ` `"enaio:objectTypeId": {`
- ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `"value": "document"`
- ` ` ` ` ` ` ` ` ` ` ` ` `},`
- ` ` ` ` ` ` ` ` ` ` ` ` `"Name": {`
- ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `"value": "my document"`
- ` ` ` ` ` ` ` ` ` ` ` ` `}`
- ` ` ` ` ` ` ` ` `},`
- ` ` ` ` ` ` ` ` `"contentStreams": [{`
- ` ` ` ` ` ` ` ` ` ` ` ` `"cid": "cid_63apple"`
- ` ` ` ` ` ` ` ` `}]`
- ` ` ` ` `}]`
- `}
- ```
 [Read about Storing Documents with the yuuvis® API](https://yuuvis.io/how-to/import)
 
-## Request
 
 ### Request URL
 
 https://api.yuuvis.io/dms/objects
 
-
-## Request parameters
-
-```
-    -data (optional)                File
-    ------------------------------------
-    -cid_63apple (optional)         File
-```
 ## Request headers
 
 Content-Type (optional) string Media type of the body sent to the API.
 Ocp-Apim-Subscription-Key string Subscription key which provides access to this API. Found in your Profile.
+ Request body
 
-## Request body
+This endpoint takes in either a multipart/form-data body or a single metadata JSON file. The latter is only permissable if the DocumentType referenced in the metadata file allows for missing content.
 
 ```
 -**data** *required
-string ($binary) 
-index data for the document (object) to be imported as JSON file
+string ($binary)
+yuuvis® metadata for the document (object) to be imported as JSON file
 
--**cid_63apple** *required
-string ($binary) 
+-**cid_63apple** *optional depending on schema
+string ($binary)
 document (object) itself to be imported as binary file
 ```
 
+Note: Make sure the CID `cid_63apple` matches the contentStreamID referenced in the posted metadata data
 
-Note: Make sure the `cid_63apple` ID is referenced in the corresponding index data
+Metadata Example, JSON Format
 
-multipart/form-data
+```
+{
+  "objects": [{
+      "properties": {
+          "enaio:objectTypeId": {
+                "value": "document"
+          },
+          "Name": {
+                "value": "my document"
+          }
+      },
+      "contentStreams": [{
+            "cid": "cid_63apple"
+      }]
+  }]
+}
+ ```
 
 ## Responses
 
 ## 200 OK                         
 
 ### OK                           
-
-
 
 ## Representations
 
@@ -290,4 +273,4 @@ multipart/form-data
 
 ### Code example
 
-[Mulitpart-body post request](./Post-Object.py)
+[Mulitpart-body post request](./Post-Object.html)

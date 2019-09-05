@@ -1,17 +1,10 @@
 # Configuration and Settings
 
-### API change history
-
-[Documentation](https://yuuvis.io/how-to)
-
-
 ## Validate a schema
 
-The **"Validate a schema"** endpoint validates a schema and returns a list of validation error messages, if any. Note that the "Try it" button is not available for this endpoint. You have to try it out externally. Use the provided code samples as a starting point.
+The **"Validate a schema"** endpoint validates a schema and returns a list of validation error messages, if any occur.
 
 [Learn about yuuvis® API schemas](https://yuuvis.io/how-to/schema)
-
-## Request
 
 ### Request URL
 
@@ -20,7 +13,7 @@ https://api.yuuvis.io/admin/schema/validate
 ## Request headers
 
 ```
-Content-Type (optional)             string          Media type of the body sent to the API.
+Content-Type                        string          application/xml
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -30,7 +23,7 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ## Request body
 
-`multipart/form-data`
+The Schema you are trying to validate, in XML Format.
 
 ## Responses
 
@@ -127,4 +120,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 ```
 ## Code samples
 
-[Validate a schema](./Post-Schema-Validate.py)
+[Validate a schema](./Post-Schema-Validate.html)

@@ -1,26 +1,20 @@
 # Configuration and Settings
 
-### API change history
-
-[Documentation](https://yuuvis.io/how-to)
-
-
 ## Update the tenant schema
 
-The **"Update the tenant schema"** endpoint validates your schema first, before it is updated. If the schema is not valid, no update takes place. Note that the "Try it" button is not available for this endpoint. You have to try it out externally. Use the provided code samples as a starting point.
+The **"Update the tenant schema"** endpoint validates your schema first, before overwriting your previous schema with it. If the schema is not valid, no update takes place.
+
 
 [Learn about yuuvis® API schemas](https://yuuvis.io/how-to/schema)
 
-## Request
-
-### Request URL
+## Request URL
 
 https://api.yuuvis.io/admin/schema
 
 ## Request headers
 
 ```
-Content-Type (optional)             string          Media type of the body sent to the API.
+Content-Type                        string          application/xml
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
@@ -30,7 +24,7 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ## Request body
 
-`multipart/form-data`
+The Schema you are trying to upload to yuuvis, in XML Format.
 
 ## Responses
 
@@ -42,7 +36,6 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 `application/json`
 
-
 ### Sample
 ```
  {
@@ -51,7 +44,7 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 422 Unprocessable Entity
 Unprocessable Entity - Schema not valid
 ```
-### Scheam
+### Schema
 ```
 {
   "title": "Validation Error List",
@@ -126,4 +119,5 @@ Unprocessable Entity - Schema not valid
 
 ### Code samples
 
-[Update the tenant schema](./Post-Schema-Update.py)
+
+[Update the tenant schema](./Post-Schema-Update.html)

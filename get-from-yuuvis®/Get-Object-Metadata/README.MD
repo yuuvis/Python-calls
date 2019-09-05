@@ -1,29 +1,15 @@
 # Core Capabilities (CRUD)
 
-### API change history
-
-[Documentation](https://yuuvis.io/how-to)
-
-
 ## Get document index data by ID
 
 The **"Get document index data by ID"** endpoint returns the index data related to the document (object) that matches the objectId parameter.
 
-[Try It](https://yuuvis.io/docs/services/yuuvis-dms-core/operations/ObjectsByObjectIdGet/console)
 
-## Request
+[Read about Retrieving Documents with the yuuvis® API](https://yuuvis.io/how-to/retrieve)
 
 ## Request URL
 
 https://api.yuuvis.io/dms/objects/{objectId}
-
-
-## Request parameters
-
-```
-objectId            string          The objectId of the document (object) to be requested.
-
-```
 
 ## Request headers
 
@@ -255,4 +241,4 @@ Ocp-Apim-Subscription-Key           string           Subscription key which prov
 
 ### Code samples
 
-[Get document index data by ID](./Get-Object-Metadata.py)
+[Get document index data by ID](./Get-Object-Metadata.html)
