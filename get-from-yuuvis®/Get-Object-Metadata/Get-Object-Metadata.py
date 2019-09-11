@@ -12,5 +12,5 @@ headerDict['Ocp-Apim-Subscription-Key'] = key
 
 session = requests.Session()
 
-response = session.get(str(baseUrl+'/dms/objects/'+objectId+), headers=headerDict)
+response = session.get(str(baseUrl+'/dms/objects/'+objectId), headers=headerDict)
 print(response.text)

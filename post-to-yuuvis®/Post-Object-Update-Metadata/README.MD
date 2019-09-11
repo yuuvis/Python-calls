@@ -28,7 +28,8 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ## Request body
 
-The updated index data is passed as JSON structure in the body as follows
+The updated index data is passed as JSON structure in the body as follows.
+Note that no ContentStreams object is present within the new metadata, as no simultaneous content update can be made. 
 
 `application/json`
 
