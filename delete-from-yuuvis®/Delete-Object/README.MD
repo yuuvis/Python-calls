@@ -35,4 +35,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### Code samples
 
-[Delete document by ID](./Delete-Object.html)
+[Delete document by ID](./Delete-Object.py)
