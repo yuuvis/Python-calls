@@ -181,4 +181,4 @@ Schema
 
 ### Code samples
 
-[Get Raw Tenant Schema](./Get-Tenant-Schema-Raw.html)
+[Get Raw Tenant Schema](./Get-Tenant-Schema-Applied.py)

@@ -3,7 +3,6 @@ import requests
 key = ""
 
 headerDict = {}
-paramDict = {}
 baseUrl = 'https' + '://' + 'api.yuuvis.io'
 
 headerDict['Ocp-Apim-Subscription-Key'] = key

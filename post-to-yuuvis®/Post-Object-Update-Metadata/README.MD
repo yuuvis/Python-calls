@@ -29,7 +29,7 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 ## Request body
 
 The updated index data is passed as JSON structure in the body as follows.
-Note that no ContentStreams object is present within the new metadata, as no simultaneous content update can be made. 
+Note that no ContentStreams object is present within the new metadata, as no simultaneous content update can be made.
 
 `application/json`
 
@@ -340,4 +340,4 @@ Note that no ContentStreams object is present within the new metadata, as no sim
 
 ### Code samples
 
-[Update document index data by ID](./Post-Object-Update-Metadata.html)
+[Update document index data by ID](./Post-Object-Update-Metadata.py)

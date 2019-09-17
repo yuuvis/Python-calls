@@ -253,4 +253,4 @@ Ocp-Apim-Subscription-Key           string      Subscription key which provides 
 
 ### Code examples
 
-[Update document content by ID](./Post-Object-Update-Content.html)
+[Update document content by ID](./Post-Object-Update-Content.py)

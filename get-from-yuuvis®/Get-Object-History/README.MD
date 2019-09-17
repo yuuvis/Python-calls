@@ -450,4 +450,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### Code samples
 
-[Get-Object-History](./Get-Object-History.html)
+[Get-Object-History](./Get-Object-History.py)

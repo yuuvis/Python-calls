@@ -273,4 +273,4 @@ Metadata Example, JSON Format
 
 ### Code example
 
-[Mulitpart-body post request](./Post-Object.html)
+[Mulitpart-body post request](./Post-Object.py)

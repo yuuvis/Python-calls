@@ -6,7 +6,6 @@ key = ""
 queryFilePath = '/path/to/your/query.json'
 
 headerDict = {}
-paramDict = {}
 baseUrl = 'https' + '://' + 'api.yuuvis.io'
 
 headerDict['Content-Type'] = 'application/json'

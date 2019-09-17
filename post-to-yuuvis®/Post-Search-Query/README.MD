@@ -280,4 +280,4 @@ A *search query* consists of three parameters:
 
 ### Code example
 
-[Search documents by search query](./Post-Search-Query.html)
+[Search documents by search query](./Post-Search-Query.py)

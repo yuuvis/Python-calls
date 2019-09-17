@@ -37,4 +37,4 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ### Code example
 
-[Get a image Rendition](./Get-Rendition-Slide.html)
+[Get a image Rendition](./Get-Rendition-Slide.py)

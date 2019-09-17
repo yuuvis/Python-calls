@@ -5,7 +5,6 @@ key = ""
 objectId = ""
 
 headerDict = {}
-paramDict = {}
 baseUrl = 'https' + '://' + 'api.yuuvis.io'
 
 headerDict['Ocp-Apim-Subscription-Key'] = key

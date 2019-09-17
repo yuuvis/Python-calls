@@ -7,7 +7,6 @@ contentFilePath = '/path/to/your/content.pdf'
 metaDataFilePath = '/path/to/your/metadata.json'
 
 headerDict = {}
-paramDict = {}
 baseUrl = 'https' + '://' + 'api.yuuvis.io'
 
 headerDict['Ocp-Apim-Subscription-Key'] = key

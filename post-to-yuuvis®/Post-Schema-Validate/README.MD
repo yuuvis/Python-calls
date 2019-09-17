@@ -120,4 +120,4 @@ The Schema you are trying to validate, in XML Format.
 ```
 ## Code samples
 
-[Validate a schema](./Post-Schema-Validate.html)
+[Validate a schema](./Post-Schema-Validate.py)

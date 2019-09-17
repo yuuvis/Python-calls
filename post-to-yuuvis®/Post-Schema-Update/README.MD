@@ -120,4 +120,4 @@ Unprocessable Entity - Schema not valid
 ### Code samples
 
 
-[Update the tenant schema](./Post-Schema-Update.html)
+[Update the tenant schema](./Post-Schema-Update.py)

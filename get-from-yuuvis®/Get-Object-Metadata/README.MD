@@ -241,4 +241,4 @@ Ocp-Apim-Subscription-Key           string           Subscription key which prov
 
 ### Code samples
 
-[Get document index data by ID](./Get-Object-Metadata.html)
+[Get document index data by ID](./Get-Object-Metadata.py)

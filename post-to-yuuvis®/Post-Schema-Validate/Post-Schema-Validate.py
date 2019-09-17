@@ -5,7 +5,6 @@ key = ""
 schemaFilePath = '/path/to/your/schema.xml'
 
 headerDict = {}
-paramDict = {}
 baseUrl = 'https' + '://' + 'api.yuuvis.io'
 
 headerDict['Content-Type'] = 'application/xml'
