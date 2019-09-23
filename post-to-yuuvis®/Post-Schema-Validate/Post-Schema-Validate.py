@@ -2,16 +2,14 @@ import requests
 
 key = ""
 #relative path to your schema files
-schemaFilePath = '/path/to/your/schema.xml'
+schema_file_path = '/path/to/your/schema.xml'
 
-headerDict = {}
-baseUrl = 'https' + '://' + 'api.yuuvis.io'
+header_dict = {}
+base_url = 'https' + '://' + 'api.yuuvis.io'
 
-headerDict['Content-Type'] = 'application/xml'
+header_dict['Content-Type'] = 'application/xml'
 
-headerDict['Ocp-Apim-Subscription-Key'] = key
+header_dict['Ocp-Apim-Subscription-Key'] = key
 
-session = requests.Session()
-
-response = session.post(str(baseUrl+'/admin/schema/validate'), data=open(schemaFilePath, 'rb'), headers=headerDict)
+response = requests.post(str(base_url+'/admin/schema/validate'), data=open(schema_file_path, 'rb'), headers=header_dict)
 print(response.json())

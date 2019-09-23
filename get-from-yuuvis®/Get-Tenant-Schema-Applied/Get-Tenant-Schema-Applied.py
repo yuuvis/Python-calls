@@ -2,12 +2,10 @@ import requests
 
 key = ""
 
-headerDict = {}
-baseUrl = 'https' + '://' + 'api.yuuvis.io'
+header_dict = {}
+base_url = 'https' + '://' + 'api.yuuvis.io'
 
-headerDict['Ocp-Apim-Subscription-Key'] = key
+header_dict['Ocp-Apim-Subscription-Key'] = key
 
-session = requests.Session()
-
-response = session.get(str(baseUrl+'/dms/schema/native'), headers=headerDict)
+response = requests.get(str(base_url+'/dms/schema/native'), headers=header_dict)
 print(response.text)

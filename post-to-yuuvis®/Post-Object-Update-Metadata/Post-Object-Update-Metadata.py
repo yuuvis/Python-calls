@@ -1,17 +1,15 @@
 import requests
 
 key = ""
-objectId = ""
+object_id = ""
 
-headerDict = {}
-baseUrl = 'https' + '://' + 'api.yuuvis.io'
+header_dict = {}
+base_url = 'https' + '://' + 'api.yuuvis.io'
 
-headerDict['Ocp-Apim-Subscription-Key'] = key
-
-session = requests.Session()
+header_dict['Ocp-Apim-Subscription-Key'] = key
 
 #relative path to your new metadata file
-newMetadataFilePath = '/path/to/your/new/metadata.json'
+new_metadata_file_path = '/path/to/your/new/metadata.json'
 
-response = session.post(str(baseUrl+'/dms/objects/'+objectId), data=open(newMetadataFilePath, 'rb'), headers=headerDict)
+response = requests.post(str(base_url+'/dms/objects/'+object_id), data=open(new_metadata_file_path, 'rb'), headers=header_dict)
 print(response.text)

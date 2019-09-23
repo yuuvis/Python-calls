@@ -1,15 +1,13 @@
 import requests
 
 key = ""
-objectId = ""
-versionNr = ""
+object_id = ""
+version_nr = ""
 
-headerDict = {}
-baseUrl = 'https' + '://' + 'api.yuuvis.io'
+header_dict = {}
+base_url = 'https' + '://' + 'api.yuuvis.io'
 
-headerDict['Ocp-Apim-Subscription-Key'] = key
+header_dict['Ocp-Apim-Subscription-Key'] = key
 
-session = requests.Session()
-
-response = session.get(str(baseUrl+'/dms/objects/'+objectId+'/versions/'+versionNr+'/actions/validate/digest'), headers=headerDict)
+response = requests.get(str(base_url+'/dms/objects/'+object_id+'/versions/'+version_nr+'/actions/validate/digest'), headers=header_dict)
 print(response)

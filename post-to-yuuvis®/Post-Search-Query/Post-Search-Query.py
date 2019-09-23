@@ -1,18 +1,15 @@
 import requests
-import json
 
 key = ""
 #relative path to your new query file
-queryFilePath = '/path/to/your/query.json'
+query_file_path = '/path/to/your/query.json'
 
-headerDict = {}
-baseUrl = 'https' + '://' + 'api.yuuvis.io'
+header_dict = {}
+base_url = 'https' + '://' + 'api.yuuvis.io'
 
-headerDict['Content-Type'] = 'application/json'
+header_dict['Content-Type'] = 'application/json'
 
-headerDict['Ocp-Apim-Subscription-Key'] = key
+header_dict['Ocp-Apim-Subscription-Key'] = key
 
-session = requests.Session()
-
-response = session.post(str(baseUrl+'/dms/objects/search'), data=open(queryFilePath, 'rb'), headers=headerDict)
+response = requests.post(str(base_url+'/dms/objects/search'), data=open(query_file_path, 'rb'), headers=header_dict)
 print(response.json())

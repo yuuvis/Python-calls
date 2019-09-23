@@ -1,14 +1,12 @@
 import requests
 
 key = ""
-objectId = ""
+object_id = ""
 
-headerDict = {}
-baseUrl = 'https' + '://' + 'api.yuuvis.io'
+header_dict = {}
+base_url = 'https' + '://' + 'api.yuuvis.io'
 
-headerDict['Ocp-Apim-Subscription-Key'] = key
+header_dict['Ocp-Apim-Subscription-Key'] = key
 
-session = requests.Session()
-
-response = session.delete(str(baseUrl+'/dms/objects/'+objectId), headers=headerDict)
+response = requests.delete(str(base_url+'/dms/objects/'+object_id), headers=header_dict)
 print(response)

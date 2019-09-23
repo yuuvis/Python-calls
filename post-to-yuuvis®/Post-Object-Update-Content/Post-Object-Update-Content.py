@@ -1,17 +1,17 @@
 import requests
 
 key = ""
-objectId = ""
+object_id = ""
 
-headerDict = {}
-baseUrl = 'https' + '://' + 'api.yuuvis.io'
+header_dict = {}
+base_url = 'https' + '://' + 'api.yuuvis.io'
 
-headerDict['Ocp-Apim-Subscription-Key'] = key
+header_dict['Ocp-Apim-Subscription-Key'] = key
 
 session = requests.Session()
 
 #relative path to your new content file
-newContentFilePath = '/path/to/your/new/content.pdf'
+new_content_file_path = '/path/to/your/new/content.pdf'
 
-response = session.post(str(baseUrl+'/dms/objects/'+objectId+'/contents/file'), data=open(newContentFilePath, 'rb'), headers=headerDict)
+response = session.post(str(base_url+'/dms/objects/'+object_id+'/contents/file'), data=open(new_content_file_path, 'rb'), headers=header_dict)
 print(response.text)
