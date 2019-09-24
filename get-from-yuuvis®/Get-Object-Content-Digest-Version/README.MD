@@ -39,3 +39,5 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 ### Code example
 
 [Get Validate Content by ID](./Get-Object-Content-Digest-Version.py)
+
+[Documentation: Versioning](https://github.com/yuuvis/Documentation/wiki/Update-documents#versioning)

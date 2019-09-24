@@ -1,6 +1,6 @@
 ## Request URL
 
-https://api.yuuvis.io/dms/objects/{objectId}/contents/renditions/slide
+https://api.yuuvis.io/dms/objects/{objectId}/contents/renditions/extract
 
 ## Request headers
 
@@ -9,6 +9,6 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ```
 
-[Documentation: Get an objects' Image Slide Rendition](https://github.com/yuuvis/Documentation/wiki/Rendition-requests)
+[Documentation: Get an objects' extraction rendition information](https://github.com/yuuvis/Documentation/wiki/Rendition-requests)
 
 [Try out the endpoint in our developer portal](https://ateamk8s.azurewebsites.net/Apis/Endpoints/view-api)

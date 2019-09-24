@@ -10,4 +10,7 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 ```
 
 [Documentation: Get document content version by object ID and version number](https://github.com/yuuvis/Documentation/wiki/Retrieve-documents#retrieving-documents-via-object-id)
+
+[Documentation: Versioning](https://github.com/yuuvis/Documentation/wiki/Update-documents#versioning)
+
 [Try out the endpoint in our developer portal](https://ateamk8s.azurewebsites.net/Apis/Endpoints/yadb-api)

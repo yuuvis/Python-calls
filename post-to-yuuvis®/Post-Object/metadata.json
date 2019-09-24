@@ -1,0 +1,15 @@
+{
+    "objects": [{
+        "properties": {
+            "enaio:objectTypeId": {
+                "value": "document"
+            },
+            "Name": {
+                "value": "test import"
+            }
+        },
+        "contentStreams": [{
+            "cid": "cid_63apple"
+        }]
+    }]
+}
