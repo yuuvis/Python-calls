@@ -9,6 +9,6 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ```
 
-[Delete document by ID](https://github.com/yuuvis/Documentation/wiki/Delete-documents#deleting-a-document)
+[Documentation: Delete document by object ID](https://github.com/yuuvis/Documentation/wiki/Delete-documents#deleting-a-document)
 
 [Try out the endpoint in our developer portal](https://ateamk8s.azurewebsites.net/Apis/Endpoints/yadb-api)

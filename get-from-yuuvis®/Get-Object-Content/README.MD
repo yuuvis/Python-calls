@@ -1,12 +1,3 @@
-# Core Capabilities (CRUD)
-
-## Get document content by ID
-
-The **"Get document content by ID"** endpoint returns the original content file of the document (object) that matches the objectId parameter.
-
-
-[Read about Retrieving Documents with the yuuvis® API](https://yuuvis.io/how-to/retrieve)
-
 ## Request URL
 
 https://api.yuuvis.io/dms/objects/{objectId}/contents/file
@@ -17,18 +8,7 @@ https://api.yuuvis.io/dms/objects/{objectId}/contents/file
 Ocp-Apim-Subscription-Key           string          Subscription key which provides access to this API. Found in your Profile.
 
 ```
-## Request body
 
-## Responses
+[Documentation: Get document content by object ID](https://github.com/yuuvis/Documentation/wiki/Retrieve-documents#retrieving-documents-via-object-id)
 
-## 200 OK
-
-### OK
-
-## 404 Not Found
-
-### NOT FOUND
-
-### Code samples
-
-[Get document content by ID](./Get-Object-Content.py)
+[Try out the endpoint in our developer portal](https://ateamk8s.azurewebsites.net/Apis/Endpoints/yadb-api)

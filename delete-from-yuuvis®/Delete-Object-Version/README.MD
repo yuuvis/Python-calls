@@ -9,7 +9,6 @@ Ocp-Apim-Subscription-Key           string          Subscription key which provi
 
 ```
 
-
-[Delete document version by ID and vNr](https://github.com/yuuvis/Documentation/wiki/Delete-documents#deleting-a-version-of-a-document)
+[Documentation: Delete document version by object ID and version number](https://github.com/yuuvis/Documentation/wiki/Delete-documents#deleting-a-version-of-a-document)
 
 [Try out the endpoint in our developer portal](https://ateamk8s.azurewebsites.net/Apis/Endpoints/yadb-api)

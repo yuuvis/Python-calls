@@ -9,4 +9,4 @@ base_url = 'https' + '://' + 'api.yuuvis.io'
 header_dict['Ocp-Apim-Subscription-Key'] = key
 
 response = requests.get(str(base_url+'/dms/objects/'+object_id+'/history'), headers=header_dict)
-print(response)
+print(response.content)
