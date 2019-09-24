@@ -1,5 +1,4 @@
 import requests
-import json
 
 key = ""
 object_id = ""
