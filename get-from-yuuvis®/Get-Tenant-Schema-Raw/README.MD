@@ -1,6 +1,6 @@
 ## Request URL
 
-https://api.yuuvis.io/dms/schema
+https://api.yuuvis.io/admin/schema
 
 ## Request headers
 
@@ -8,6 +8,6 @@ https://api.yuuvis.io/dms/schema
 |---------------------------|--------|-----------------------------------------------------------------------------------------------------|
 | Ocp-Apim-Subscription-Key | String | Subscription key which provides access to the API. Found on the Subscriptions page of your account. |
 
-[Documentation: Get Applied Tenant Schema](https://github.com/yuuvis/Documentation/wiki/Schema-definition#SchemaDefinition-RetrieveSchema)
+[Documentation: Get Raw Tenant Schema](https://github.com/yuuvis/Documentation/wiki/Schema-definition#SchemaDefinition-RetrieveSchema)
 
 [Try out the endpoint in our developer portal](https://ateamk8s.azurewebsites.net/Apis/Endpoints/admin-api)
