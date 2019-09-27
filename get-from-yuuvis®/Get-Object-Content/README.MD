@@ -4,10 +4,9 @@ https://api.yuuvis.io/dms/objects/{objectId}/contents/file
 
 ## Request headers
 
-```
-Ocp-Apim-Subscription-Key           string          Subscription key which provides access to this API. Found in your Profile.
-
-```
+| Header                    | Type   | Meaning                                                                                             |
+|---------------------------|--------|-----------------------------------------------------------------------------------------------------|
+| Ocp-Apim-Subscription-Key | String | Subscription key which provides access to the API. Found on the Subscriptions page of your account. |
 
 [Documentation: Get document content by object ID](https://github.com/yuuvis/Documentation/wiki/Retrieve-documents#retrieving-documents-via-object-id)
 

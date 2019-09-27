@@ -5,14 +5,9 @@ https://api.yuuvis.io/dms/objects/{objectId}
 
 ## Request headers
 
-```
-Content-Disposition                 string      format: attachment;filename=myfilename
-
---------------------------------------------------------------------------------------------------------------------------------
-
-Ocp-Apim-Subscription-Key           string      Subscription key which provides access to this API. Found in your Profile.
-
-```
+| Header                    | Type   | Meaning                                                                                             |
+|---------------------------|--------|-----------------------------------------------------------------------------------------------------|
+| Ocp-Apim-Subscription-Key | String | Subscription key which provides access to the API. Found on the Subscriptions page of your account. |
 
 [Documentation: Updating document metadata](https://github.com/yuuvis/Documentation/wiki/Update-documents#updating-metadata)
 

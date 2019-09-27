@@ -22,10 +22,9 @@ https://api.yuuvis.io/dms/objects/{objectId}/history
 
 ## Request headers
 
-```
-Ocp-Apim-Subscription-Key           string          Subscription key which provides access to this API. Found in your Profile.
-
-```
+| Header                    | Type   | Meaning                                                                                             |
+|---------------------------|--------|-----------------------------------------------------------------------------------------------------|
+| Ocp-Apim-Subscription-Key | String | Subscription key which provides access to the API. Found on the Subscriptions page of your account. |
 
 [Documentation: Get an objects History entries](https://github.com/yuuvis/Documentation/wiki/Retrieve-history-entries)
 
