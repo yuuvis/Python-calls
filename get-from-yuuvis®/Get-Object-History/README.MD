@@ -8,4 +8,4 @@ https://api.yuuvis.io/dms/objects/{objectId}/history
 
 &rarr; [Documentation: Get an objects History entries](https://github.com/yuuvis/Documentation/wiki/Retrieve-history-entries) | [History entry types](https://github.com/yuuvis/Documentation/wiki/Retrieve-history-entries#RetrievingtheHistoryEntriesofaDocument-WhichHistoryEntriesAreThere?)
 
-&rarr; [Try out the endpoint in our developer portal](&rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/dms-core-api)
+&rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/dms-core-api)
