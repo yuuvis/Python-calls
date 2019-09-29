@@ -8,6 +8,6 @@ https://api.yuuvis.io/dms/objects/{objectId}/contents/file
 |---------------------------|--------|-----------------------------------------------------------------------------------------------------|
 | Ocp-Apim-Subscription-Key | String | Subscription key which provides access to the API. Found on the Subscriptions page of your account. |
 
-[Documentation: Get document content by object ID](https://github.com/yuuvis/Documentation/wiki/Retrieve-documents#retrieving-documents-via-object-id)
+&rarr; [Documentation: Get document content by object ID](https://github.com/yuuvis/Documentation/wiki/Retrieve-documents#RetrievingDocumentsviaCoreAPI-RetrievingDocumentsviaObjectID)
 
-[Try out the endpoint in our developer portal](https://ateamk8s.azurewebsites.net/Apis/Endpoints/yadb-api)
+&rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/dms-core-api)
