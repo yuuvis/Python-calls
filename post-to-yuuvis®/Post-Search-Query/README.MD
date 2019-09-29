@@ -8,6 +8,6 @@ https://api.yuuvis.io/dms/objects/search
 
 &rarr; [Documentation: Retrieving Documents via Search Endpoint](https://github.com/yuuvis/Documentation/wiki/Retrieve-documents#RetrievingDocumentsviaCoreAPI-RetrievingDocumentsviaSearchEndpoint)
 
-&rarr; [Learn about the yuuvis® CMIS-Based Query Language](https://yuuvis.io/how-to/CMIS)
+&rarr; [Learn about the yuuvis® CMIS-Based Query Language](https://github.com/yuuvis/Documentation/wiki/Query-language)
 
 &rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/dms-core-api)
