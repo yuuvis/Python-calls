@@ -4,7 +4,7 @@ https://api.yuuvis.io/dms/objects/{objectId}/versions/{versionNr}/actions/valida
 ## Request headers
 | Header                    | Type   | Meaning                                                                                             |
 |---------------------------|--------|-----------------------------------------------------------------------------------------------------|
-| Ocp-Apim-Subscription-Key | String | Subscription key which provides access to this API. Found in your Profile. |
+| Ocp-Apim-Subscription-Key | String | Subscription key which provides access to this API. Found on the subscription page of your account. |
 
 &rarr; [Code example: Get Validate Content by ID](./Get-Object-Content-Digest-Version.py)
 
