@@ -1,5 +1,5 @@
 ## Request URL
-https://api.yuuvis.io/dms/objects/{objectId}/versions/{versionNr}/contents/renditions/pdf
+https://api.yuuvis.io/dms-view/objects/{objectId}/versions/{versionNr}/contents/renditions/pdf
 
 ## Request headers
 | Header                    | Type   | Meaning                                                                                             |

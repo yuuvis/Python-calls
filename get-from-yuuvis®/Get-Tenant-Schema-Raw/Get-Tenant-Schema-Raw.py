@@ -3,9 +3,9 @@ import requests
 key = ""
 
 header_dict = {}
-base_url = 'https' + '://' + 'api.yuuvis.io'
+base_url = 'https' + '://' + 'api.yuuvis.io' + '/admin'
 
 header_dict['Ocp-Apim-Subscription-Key'] = key
 
-response = requests.get(str(base_url+'/admin/schema'), headers=header_dict)
+response = requests.get(str(base_url+'/schema'), headers=header_dict)
 print(response.text)

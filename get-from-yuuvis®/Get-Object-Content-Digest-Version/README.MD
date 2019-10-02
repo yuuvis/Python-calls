@@ -1,5 +1,5 @@
 ## Request URL
-https://api.yuuvis.io/dms/objects/{objectId}/versions/{versionNr}/actions/validate/digest
+https://api.yuuvis.io/dms-core/objects/{objectId}/versions/{versionNr}/actions/validate/digest
 
 ## Request headers
 | Header                    | Type   | Meaning                                                                                             |
