@@ -1,6 +1,6 @@
-<schema xmlns="http://optimal-systems.org/ns/dmscloud/schema/v5.0/"
+<schema xmlns="http://optimal-systems.org/ns/dmscloud/schema/v4.0/"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://optimal-systems.org/ns/dmscloud/schema/v5.0/ dmsCloud-schema.xsd">
+        xsi:schemaLocation="http://optimal-systems.org/ns/dmscloud/schema/v4.0/ dmsCloud-schema.xsd">
         <propertyStringDefinition>
             <id>from</id>
             <propertyType>string</propertyType>
@@ -30,7 +30,7 @@
         </propertyDateTimeDefinition>
 	<typeDocumentDefinition>
             <id>email</id>
-            <baseId>system:document</baseId>
+            <baseId>enaio:document</baseId>
             <propertyReference>from</propertyReference>
             <propertyReference>to</propertyReference>
             <propertyReference>received</propertyReference>

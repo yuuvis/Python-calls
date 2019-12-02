@@ -1,6 +1,6 @@
 {
   "query": {
-    "statement": "SELECT * FROM object",
+    "statement": "SELECT * FROM enaio:object",
     "skipCount": 0,
     "maxItems": 50
   }
