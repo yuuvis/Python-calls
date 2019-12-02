@@ -1,9 +1,6 @@
 {
     "objects": [{
         "properties": {
-            "system:objectTypeId": {
-                "value": "document"
-            },
             "Name": {
                 "value": "updated attribute"
             }

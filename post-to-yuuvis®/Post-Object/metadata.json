@@ -1,7 +1,7 @@
 {
     "objects": [{
         "properties": {
-            "system:objectTypeId": {
+            "objectTypeId": {
                 "value": "document"
             },
             "Name": {
