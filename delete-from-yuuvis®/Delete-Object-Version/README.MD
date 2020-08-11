@@ -8,4 +8,4 @@ https://api.yuuvis.io/dms-core/objects/{objectId}/versions/{versionNr}
 
 &rarr; [Documentation: Delete document version by object ID and version number](https://github.com/yuuvis/Documentation/wiki/Delete-documents#DeletingDocumentsviaCoreAPI-DeleteaVersionofaDocument)
 
-&rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/dms-core-api)
+&rarr; [Try out the endpoint in our developer portal](https://developer.yuuvis.com/Apis/Endpoints/dms-core-api)

@@ -11,4 +11,4 @@ https://api.yuuvis.io/dms-core/objects/{objectId}
 
 &rarr; [Documentation: Delete document by object ID](https://github.com/yuuvis/Documentation/wiki/Delete-documents#DeletingDocumentsviaCoreAPI-DeleteaDocument)
 
-&rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/dms-core-api)
+&rarr; [Try out the endpoint in our developer portal](https://developer.yuuvis.com/Apis/Endpoints/dms-core-api)

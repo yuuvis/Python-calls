@@ -8,4 +8,4 @@ https://api.yuuvis.io/dms-core/objects/{objectId}
 
 &rarr; [Documentation: Updating Document Metadata](https://github.com/yuuvis/Documentation/wiki/Update-documents#UpdatingDocumentsviaCoreAPI-UpdateMetadata)
 
-&rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/dms-core-api)
+&rarr; [Try out the endpoint in our developer portal](https://developer.yuuvis.com/Apis/Endpoints/dms-core-api)

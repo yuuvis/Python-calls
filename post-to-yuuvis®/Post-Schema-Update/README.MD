@@ -9,4 +9,4 @@ https://api.yuuvis.io/admin/schema/
 
 &rarr; [Documentation: Update your Schema](https://github.com/yuuvis/Documentation/wiki/Schema-definition#SchemaDefinition-UpdateSchema)
 
-&rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/admin-api)
+&rarr; [Try out the endpoint in our developer portal](https://developer.yuuvis.com/Apis/Endpoints/admin-api)

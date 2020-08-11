@@ -10,4 +10,4 @@ https://api.yuuvis.io/dms-core/objects/{objectId}/versions/{versionNr}/actions/v
 
 &rarr; [Documentation: Content Digest - Generation and Validation](https://github.com/yuuvis/Documentation/wiki/Import-and-store#ImportingDocumentsviaCoreAPI-ContentDigestGeneration)
 
-&rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/dms-core-api)
+&rarr; [Try out the endpoint in our developer portal](https://developer.yuuvis.com/Apis/Endpoints/dms-core-api)

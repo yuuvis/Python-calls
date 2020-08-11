@@ -8,4 +8,4 @@ https://api.yuuvis.io/dms-core/objects
 
 &rarr; [Documentation: Importing and Storing a Single Document](https://github.com/yuuvis/Documentation/wiki/Import-and-store#importing-and-storing-a-single-document)
 
-&rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/dms-core-api)
+&rarr; [Try out the endpoint in our developer portal](https://developer.yuuvis.com/Apis/Endpoints/dms-core-api)

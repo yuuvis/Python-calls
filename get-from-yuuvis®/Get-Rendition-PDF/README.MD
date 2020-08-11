@@ -8,4 +8,4 @@ https://api.yuuvis.io/dms-view/objects/{objectId}/contents/renditions/pdf
 
 &rarr; [Documentation: Get an object's PDF Rendition](https://github.com/yuuvis/Documentation/wiki/Rendition-requests)
 
-&rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/dms-view-api)
+&rarr; [Try out the endpoint in our developer portal](https://developer.yuuvis.com/Apis/Endpoints/dms-core-api)

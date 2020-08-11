@@ -10,4 +10,4 @@ https://api.yuuvis.io/dms-core/objects/search
 
 &rarr; [Learn about the yuuvis® CMIS-Based Query Language](https://github.com/yuuvis/Documentation/wiki/Query-language)
 
-&rarr; [Try out the endpoint in our developer portal](https://yuuvis.io/Apis/Endpoints/dms-core-api)
+&rarr; [Try out the endpoint in our developer portal](https://developer.yuuvis.com/Apis/Endpoints/dms-core-api)
